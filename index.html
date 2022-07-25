@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title> Formulário Carros </title>
+        <meta charset="utf-8"/>
+    </head>
+    
+    <body background="img/background2.jpg">
+        
+    <h2 align="center"> <font color="white"> Formulário Carros </h2> </font>
+
+    <table border="1" align="center" width="500" bgcolor="white">
+        <tr><td>    
+
+        <fieldset>
+            <legend> Informe seus Dados </legend>
+            <form action="enviar.php" method="post" name="Cadastro">
+
+                <table border="0" cellpadding="5">
+                <tr>
+                <td><label for="Nome"> Nome: </label>
+                <td><input type="text" id="nome" name="nome" size="40" maxlength="40" placeholder="Digite o seu nome" required/>
+                </tr>
+
+                    <tr>
+                    <td><label> Telefone: </label>
+                    <td><input type="tel" id="telefone" name="telefone" size="40" placeholder="Informe o seu telefone (XX) XXXXX-XXXXX" required/>
+                    </tr>
+
+                    <tr>
+                        <td><label> Data de Nascimento: </label>
+                        <td><input type="date" id="data_nasc" name="data_nasc" min="1950-01-01" max="2004-01-01" disabled/>
+                        </tr>
+
+                    <tr>
+                        <td><label> E-mail </label>
+                        <td><input type="email" id="mail" name="mail" size="40" placeholder="Digite o seu E-mail corretamente" disabled/>
+                        </tr>
+                    
+                    <tr>
+                        <td> <label> Sexo: </label> </td>
+                        <td> <label> <input type="radio" id="sexo" name="sexo" value="M" required/> 
+                         Masculino</label>
+                         <br/>
+                        <label><input type="radio" id="sexo" name="sexo" value="F" required/>
+                         Feminino </label>
+                         <br/>
+                        <label><input type="radio" id="sexo" name="sexo" value="Outro" required/>
+                         Outro </label>
+                        <input type="text" id="outro" name="outro"/> </td>
+                        </tr>
+
+                        </table>
+                        </fieldset>
+
+                        <fieldset>
+                            
+                            <legend> Qual o seu carro favorito? </legend>
+                            <table border="0" cellpadding="5"> 
+                            <tr>   
+                            <td><label> Marca </label></td>
+                            <td><select id="marca" name="marca" required>
+                                <option value="" selected="selected"> --Selecione-- </option>
+                                <option value="selectmarca">AUDI</option>
+                                <option value="selectmarca">ALFA ROMEO</option>
+                                <option value="selectmarca">BMW</option>
+                                <option value="selectmarca">CHEVROLET</option>
+                                <option value="selectmarca">FORD</option>
+                                <option value="selectmarca">VOLKSWAGEN</option>
+                                <option value="selectmarca">FIAT</option>
+                                <option value="selectmarca">CITROEN</option>
+                                <option value="selectmarca">HONDA</option>
+                                <option value="selectmarca">TOYOTA</option>
+                                <option value="selectmarca">JAC</option>
+                                <option value="selectmarca">RENAULT</option>
+                                <option value="selectmarca">HYUNDAI</option>
+                                <option value="selectmarca">KIA</option>
+                                <option value="selectmarca">SUZUKI</option>
+                                <option value="selectmarca">NISSAN</option>
+                                <option value="selectmarca">CHERY</option>
+                                <option value="selectmarca">VOLVO</option>
+                                <option value="selectmarca">LAND ROVER</option>
+                                <option value="selectmarca">LIFAN</option>
+                                <option value="selectmarca">LEXUS</option>
+                                <option value="selectmarca">LADA</option>
+                                <option value="selectmarca">MAZDA</option>
+                                <option value="selectmarca">JEEP</option>
+                                <option value="selectmarca">MITSUBISHI</option>
+                                <option value="selectmarca">MINI</option>
+                                <option value="selectmarca">PORCHE</option>
+                                <option value="selectmarca">HUMMER</option>
+                                <option value="selectmarca">INFINITI</option>
+                                    
+                                </select>
+                                
+                                <tr>
+                                <td><label for="Modelo"> Modelo: </label>
+                                    <td><input type="text" id="modelo" name="modelo" size="40" maxlength="40" placeholder="Digite modelo do carro" required/>
+                                
+                                </tr>
+
+                                <tr>
+                                    <td><label for="cor"> Qual a cor? </label></td>
+                                    <td><input type="color" id="color" name="color"></td>
+                                </tr>
+
+                                <tr>
+                                    <td> <label> Sexo: </label> </td>
+                                    <td> <label> <input type="radio" id="sexo" name="sexo" value="M" required/> 
+                                     Masculino</label>
+                                     <br/>
+                                    <label><input type="radio" id="sexo" name="sexo" value="F" required/>
+                                     Feminino </label>
+                                     <br/>
+                                    <label><input type="radio" id="sexo" name="sexo" value="Outro" required/>
+                                     Outro </label>
+                                    <input type="text" id="outro" name="outro"/> </td>
+                                    </tr>
+                    
+                                    <tr>
+                                    <td><label> Itens/Acessórios: </label> </td>
+                                    <br/>        
+                                    <td><label><input type="checkbox" id="arcondicionado" name="arcondicionado" value="arcondicionado" />
+                                     Ar Condicionado </label>
+                                    <br/>
+                    
+                                    <label><input type="checkbox" id="vidroeletrico" name="vidroeletrico" value="vidroeletrico"/>
+                                     Vidro Elétrico </label>   
+                                     <br/>
+                                     
+                                    <label><input type="checkbox" id="radio" name="radio" value="radio"/>
+                                        Rádio </label>   
+                                        <br/>
+                                   
+                                    <label><input type="checkbox" id="direcaohidraulica" name="direcaohidraulica" value="direcaohidraulica"/>
+                                            Direção Hidráulica </label>   
+                                            <br/>
+                    
+                                    <label><input type="checkbox" id="=sensorestacionamento" name="sensorestacionamento" value="sensorestacionamento"/>
+                                            Sensor de Estacionamento </label> </td> 
+                                            </tr>
+
+                                            <td><label for="Quantidade"> Quantos carros você possui atualmente? </label>
+                                                <td><input type="number" id="quant" name="quant" required/>
+                                            
+                                            </tr>
+
+                                    <tr>
+                                    <th colspan="2">    
+                                    <input type="reset" id="limpar" name="limpar" value="LIMPAR" />
+                                    <br/> <br/>
+                                    <button type="submit" id="send" name="send">
+                                        <img src="img/enviar.png" width="20" height="20" alt="send"/>
+                                    </button>
+                                    </th> 
+                                </tr>   
+                        </table>
+                        </form>  
+                        </fieldset> 
+                    </td></tr>
+    </table>
+    </body>
+</html>
+                    
+
+                         
+
+    
